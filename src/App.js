@@ -4,7 +4,7 @@ import Saving from "./Saving.tsx";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/MyPage_FrontEnd">
       <Routes>
         <Route path="/" element={<Portfolio />} />
         <Route path="/saving" element={<Saving />} />
