@@ -1,5 +1,6 @@
 {
   "name": "mypage",
+  "homepage": "https://reduction-choi.github.io/MyPage_FrontEnd/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
