@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-
+import { useNavigate } from "react-router-dom";
 // ─── Types ────────────────────────────────────────────────────────────────────
 interface Project {
   id: number;
@@ -195,6 +195,7 @@ function Cursor() {
 
 // ─── NavBar ───────────────────────────────────────────────────────────────────
 function NavBar({ active }: { active: string }) {
+  const navigate = useNavigate();
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const h = () => setScrolled(window.scrollY > 60);
@@ -225,7 +226,7 @@ function NavBar({ active }: { active: string }) {
             onMouseLeave={e => (e.currentTarget.style.color = active === id ? "#e8ff47" : "rgba(255,255,255,0.5)")}
           >{label}</button>
         ))}
-        <button key="saving" onClick={() => null} style={{
+        <button key="saving" onClick={() => navigate("/saving")} style={{
             background: "none", border: "none", cursor: "pointer",
             fontFamily: "'Noto Sans KR', sans-serif", fontSize: 13, letterSpacing: 1,
             color: active === "saving" ? "#e8ff47" : "rgba(255,255,255,0.5)",
