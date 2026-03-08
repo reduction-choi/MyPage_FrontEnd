@@ -506,7 +506,7 @@ function ContactSection() {
           </p>
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-          {[["GitHub", "github.com/reduction-choi", "https://github.com/reduction-choi"], ["Email", "hanwon0713@naver.com", "mailto:hanwon0713@naver.com"], ["Email", "hanwon0713@kaist.ac.kr", "mailto:hanwon0713@kaist.ac.kr"]].map(([platform, handle, href]) => (
+          {[["GitHub", "github.com/reduction-choi", "https://github.com/reduction-choi"], ["Email", "hanwon0713@naver.com", "mailto:hanwon0713@naver.com"], ["Email", "hanwon0713@kaist.ac.kr", "mailto:hanwon0713@kaist.ac.kr"], ["Phone", "(+82)10-6631-7686", "tel:(+82)10-6631-7686"]].map(([platform, handle, href]) => (
             <a key={platform} href={href} target="_blank" rel="noreferrer" style={{
               display: "flex", alignItems: "center", gap: 20, padding: "20px 28px",
               border: "1px solid rgba(255,255,255,0.08)", textDecoration: "none", transition: "all .25s",
