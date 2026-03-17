@@ -25,7 +25,7 @@ interface Career {
 }
 
 // ─── Data ─────────────────────────────────────────────────────────────────────
-const LAST_UPDATED = "2026.03.08";
+const LAST_UPDATED = "2026.03.17";
 
 const careers: Career[] = [
   {
@@ -59,9 +59,10 @@ const projects: Project[] = [
   {
     id: 1,
     period: "2026.04",
-    title: "개인 TodoList 웹 (예정)",
-    description: "매일 할 일의 성취도를 보여주는 웹 개발",
-    tags: ["React", "MongoDB"],
+    title: "개인 TodoList 웹",
+    description: "매일 할 일과 성취도를 보여주는 웹 개발",
+    tags: ["React", "Express.js", "Postgres(supabase)"],
+    link: "https://reduction-choi.github.io/TodoWeb",
   },
   {
     id: 2,
@@ -69,12 +70,14 @@ const projects: Project[] = [
     title: "개인 포트폴리오 웹",
     description: "지금 이 페이지",
     tags: ["React", "TypeScript"],
+    link: "https://reduction-choi.github.io/MyPage_FrontEnd",
   },
   {
     id: 3,
     period: "2026.02",
     title: "Unknown 게임 웹 개발",
     description: "여러 클라이언트가 동시에 화면을 볼 수 있도록 하는 웹 게임 제작",
+    link: "https://reduction-choi.github.io/Unknown_web",
     tags: ["React", "Express.js", "Node.js"],
   },
   {
@@ -82,6 +85,7 @@ const projects: Project[] = [
     period: "2025.10",
     title: "일본어 단어공부 웹사이트",
     description: "정답/오답 횟수 기반 단어 추천을 통한 효율적 일본어 단어학습 웹사이트",
+    link: "https://reduction-choi.github.io/Japanese_vocab",
     tags: ["React", "Express.js", "MongoDB"],
   },
   {
